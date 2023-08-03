@@ -20,9 +20,10 @@ body{
 
 .container {
     width: 20%;
+    max-width: 400px;
     background-color: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .container img {
@@ -41,4 +42,36 @@ body{
     font-size: 15px;
     color: hsl(220, 15%, 55%);
     margin-bottom: 10px;
+}
+
+/* On smaller screens, adjust container width and font sizes */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .details h1 {
+        font-size: 18px;
+    }
+
+    .details p {
+        font-size: 13px;
+    }
+}
+
+/* On even smaller screens, further adjust container width and font sizes */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .details h1 {
+        font-size: 16px;
+    }
+
+    .details p {
+        font-size: 12px;
+    }
 }
